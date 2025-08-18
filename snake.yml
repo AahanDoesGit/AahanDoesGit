@@ -1,4 +1,4 @@
-name: Generate snake animation
+name: Generate Snake Animation
 
 on:
   schedule: # execute every 12 hours
@@ -7,31 +7,42 @@ on:
 
 permissions:
   contents: write
-  # push is not a permission key here; remove it
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Generate snake.svg
-        uses: Platane/snk/svg-only@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: dist/snake.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          node-version: 20
 
-      - name: Push snake.svg to the output branch
+      - name: Install dependencies
+        run: |
+          npm install -g @platane/snk svgexport
+
+      - name: Generate snake.svg
+        run: |
+          snk svg-only --github-user ${{ github.repository_owner }} --output dist/snake.svg --palette github-dark
+
+      - name: Convert SVG to GIF
+        run: |
+          mkdir -p dist
+          svgexport dist/snake.svg dist/snake.gif 600:600
+
+      - name: Update README with GIF
+        run: |
+          sed -i 's|<img src=".*snake.svg".*>|<img src="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/output/dist/snake.gif" alt="Snake animation" />|' README.md
+
+      - name: Push changes to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          commit_message: Update snake animation
+          commit_message: Update snake animation GIF
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
