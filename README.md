@@ -31,7 +31,6 @@ AI & Embedded Systems Developer | Building smart hardware, scalable ML applicati
 ### 📊 GitHub Stats
 <p align="center">
   <img src="https://github-readme-stats.shion.dev/api?username=AahanDoesGit&theme=dark&hide_border=false" />
-  <img src="https://streak-stats.demolab.com/?user=AahanDoesGit&theme=dark&hide_border=false" />
   <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=AahanDoesGit&theme=dark&hide_border=false&layout=compact" />
 </p>
 
