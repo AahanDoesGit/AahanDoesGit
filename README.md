@@ -37,13 +37,6 @@ AI & Embedded Systems Developer | Building smart hardware, scalable ML applicati
 
 ---
 
-### 🏆 GitHub Trophies
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AahanDoesGit&theme=radical&no-frame=false&no-bg=true&margin-w=4" />
-</p>
-
----
-
 ### ✍️ Random Dev Quote
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" />
