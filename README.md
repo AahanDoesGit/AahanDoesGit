@@ -36,7 +36,7 @@ AI & Embedded Systems Developer | Building smart hardware, scalable ML applicati
 
 ---
 ### 🌐 Connect with Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aahandoesgit) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/_.aahansharma_.19)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aahan-sharma-0a70663b4?utm_source=share_via&utm_content=profile&utm_medium=member_android) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/_.aahansharma_.19)
 
 <p align="right">
   <a href="https://visitcount.itsvg.in"><img src="https://komarev.com/ghpvc/?username=AahanDoesGit&icon=0&color=0" alt="Profile Views" /></a>
